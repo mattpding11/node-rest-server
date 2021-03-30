@@ -10,8 +10,8 @@ router.put('/:id?', usuariosPut)
 
 router.post('/', usuariosPost);
 
-router.patch('/', usuariosPatch);
+router.patch('/:id?', usuariosPatch);
 
-router.delete('/', usuariosDelete);
+router.delete('/:id?', usuariosDelete);
 
 module.exports = router;
