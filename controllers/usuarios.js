@@ -34,14 +34,20 @@ const usuariosPut = (req, res = response) => {
 }
 
 const usuariosPatch = (req, res = response) => {
+    const id = req.params.id
+
     res.json({
-        msg: 'pach API - controlador'
+        msg: 'pach API - controlador',
+        id
  })
 }
 
 const usuariosDelete = (req, res = response) => {
+    const id = req.params.id
+
     res.json({
-        msg: 'delete API - controlador'
+        msg: 'delete API - controlador',
+        id
  })
 }
 
