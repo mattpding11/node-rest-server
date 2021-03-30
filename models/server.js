@@ -1,8 +1,10 @@
 const express = require('express')
 var cors = require('cors')
 
-// npm init - y
-// npm install fotenv express
+// inicializar el repo con todo yes por default: npm init - y
+// npm install dotenv express
+// recuperar archivos: git chekout -- .
+
 
 class Server {
 
