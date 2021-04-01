@@ -17,7 +17,6 @@ const usuariosGet = async(req = request, res = response) => {
 
     // const total =  Usuario.countDocuments(query);
 
-
     // Desestructuracion de arreglo, con promesas es mas eficiente 
     const [usuarios_, total] = await Promise.all([
         usuarios,
@@ -109,12 +108,19 @@ const usuariosDelete = async(req, res = response) => {
  })
 }
 
+const Test = (req, res) => {
+
+    res.json({
+        Test: "Prueba exitosa"
+    })
+}
 
 module.exports = {
     usuariosGet,
     usuariosPost,
     usuariosPut,
     usuariosPatch,
-    usuariosDelete
+    usuariosDelete,
+    Test
 }
 
