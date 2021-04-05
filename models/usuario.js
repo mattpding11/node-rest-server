@@ -38,7 +38,8 @@ const UsuarioSchema = Schema({
 // Con esto redefinimos el objeto para que no me muestre en el json la password la version
 
 UsuarioSchema.methods.toJSON = function() {
-    const {__v, password,...usuario} = this.toObject();
+    const {__v, password, _id, ...usuario} = this.toObject();
+    usuario.uid = _id;
     return usuario;
 }
 
