@@ -1,6 +1,6 @@
 const {response, request} = require('express');
 const bycriptjs = require('bcryptjs');
-const Usuario = require('../models/usuario');
+const Usuario = require('../models/usuario');  
 
 const usuariosGet = async(req = request, res = response) => {
 
@@ -26,12 +26,25 @@ const usuariosGet = async(req = request, res = response) => {
     // NUMBER() retorna el numero
 
     res.json({
+        msg: "prueba",
         total,
         usuarios_
     });
 }
 
-// los parametros vienen en el query, los params en postman
+
+/*
+
+IMPORTANTE
+
+en el req.params vienen los parametros de la ruta en la url api/:id?
+
+en el req.query vienen los parametros de consulta (query params) api/?limit=5
+
+en el req.body viene el cuerpo de la peticion (el body)(se necesita express.json())
+
+*/
+
 // const usuariosGet = (req = request, res = response) => {
 
 //     const {q, nombre = 'no name' #valor por defecto, page = 1, apikey} = req.query;
