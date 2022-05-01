@@ -64,7 +64,7 @@ const buscarProductos = async(termino = '', res) => {
     const productos = await Producto.find({nombre: regex})
                         .populate('categoria','nombre')
 
-    res.json({
+    res.json({ 
         results: productos
     })
 }
