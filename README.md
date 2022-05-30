@@ -1,8 +1,8 @@
 # Aplicación Rest con NodeJS y conexión de base da datos Mongo DB
 
-Puede probar la api rest haciendo las peticiones desde postman a este back, puede hacerlo desde su equipo siguiendo estos ejemplos en la documentación <https://documenter.getpostman.com/view/10033004/Uz5CMHyt> . Este consume los endpoints aplicación que esta desplegada en un servidor web.
+Puede probar la api rest haciendo las peticiones desde postman a este back, puede hacerlo desde su equipo siguiendo estos ejemplos en la **documentación** _**<https://documenter.getpostman.com/view/10033004/Uz5CMHyt> **_. Este consume los endpoints aplicación que esta desplegada en un servidor web.
 
-En la documentación cambie el lenguaje de cURL a HTTP para mejor comprensión 
+En la documentación cambie el lenguaje de **cURL a HTTP** para mejor comprensión 
 
 ![imagen](https://res.cloudinary.com/drbotbbjb/image/upload/v1653938308/Screenshot_151_hyuwf2.png)
 
@@ -12,11 +12,11 @@ ____
 
 O lo puede probar desde su equipo local siguiendo estos pasos
 
-Entre al siguiente enlace <https://documenter.getpostman.com/view/10033004/Uz5Doc1U> para ver la documentación desde la aplicación en local
+Entre al siguiente enlace _<https://documenter.getpostman.com/view/10033004/Uz5Doc1U>_ para ver la documentación desde la aplicación en local
 
 Si quiere usar esta aplicación en su local por favor:
 -	Clone o descargue el repositorio 
-- En la carpeta raíz del proyecto cree un archivo llamado .env, dentro de el copie y pegue las siguientes variables de entorno
+- **En la carpeta raíz del proyecto cree un archivo llamado .env, dentro de el copie y pegue las siguientes variables de entorno**
 
 PORT=8080
 MONGODB_CNN=mongodb+srv://<user>:<password>@miclustercafe.1dnc6.mongodb.net/<db_name>
@@ -28,6 +28,8 @@ GOOGLE_SECRET=
 CLOUDINARY_URL=cloudinary://269819288669655:IwwVIpkk3oPq8yTJgNqu6QdQaMA@drbotbbjbPORT=8080
 
 
+- Para loguearse con Google debe ir a **Google Cloud**, en la herramienta de **Api y servicio** crear un proyecto donde debe copiar y pegar las credenciales que aquí están en **GOOGLE_CLIENT_ID** y **GOOGLE_SECRET**
+  
 -	Ingrese a mongo atlas y crea una cuenta
 -	Cree el cluster inicial
 -	Luego en la parte de seguridad en acceso de base de datos cree un nuevo usuario, coloque cualquier nombre, y cree o genere una nueva contraseña 
