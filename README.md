@@ -19,13 +19,18 @@ Si quiere usar esta aplicación en su local por favor:
 - **En la carpeta raíz del proyecto cree un archivo llamado .env, dentro de el copie y pegue las siguientes variables de entorno**
 
 PORT=8080
+
 MONGODB_CNN=mongodb+srv://<user>:<password>@miclustercafe.1dnc6.mongodb.net/<db_name>
-USER=mpd11
-PASS=LrEkIr8na18XuqlM
+
+USER=
+  
+PASS=
+  
 SECRETORPRIVATEKEY=Est03sMyPublicKey
+  
 GOOGLE_CLIENT_ID=
+  
 GOOGLE_SECRET=
-CLOUDINARY_URL=cloudinary://269819288669655:IwwVIpkk3oPq8yTJgNqu6QdQaMA@drbotbbjbPORT=8080
 
 
 - Para loguearse con Google debe ir a **Google Cloud**, en la herramienta de **Api y servicio** crear un proyecto donde debe copiar y pegar las credenciales que aquí están en **GOOGLE_CLIENT_ID** y **GOOGLE_SECRET**
