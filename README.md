@@ -20,7 +20,7 @@ Si quiere usar esta aplicación en su local por favor:
 
 PORT=8080
 
-MONGODB_CNN=mongodb+srv://<user>:<password>@miclustercafe.1dnc6.mongodb.net/<db_name>
+MONGODB_CNN=mongodb+srv://[user]:[password]@miclustercafe.1dnc6.mongodb.net/[db_name]
 
 USER=
   
@@ -31,6 +31,8 @@ SECRETORPRIVATEKEY=Est03sMyPublicKey
 GOOGLE_CLIENT_ID=
   
 GOOGLE_SECRET=
+
+CLOUDINARY_URL=
 
 
 - Para loguearse con Google debe ir a **Google Cloud**, en la herramienta de **Api y servicio** crear un proyecto donde debe copiar y pegar las credenciales que aquí están en **GOOGLE_CLIENT_ID** y **GOOGLE_SECRET**
@@ -50,4 +52,5 @@ GOOGLE_SECRET=
 -	Luego abra su db compass y cree una nueva conexión, donde dice uri, pege su cadena de mongo_cnn del .env y presione conectar 
 -	Si se conectó correctamente ya debería funcionar la aplicación, antes de probar los endpoint recuerde crear usuarios primero ya que los que aparecen en la documentación son los que yo use para las pruebas en mi equipo (tome de ejemplo la documentación de postman aquí
 <https://documenter.getpostman.com/view/10033004/Uz5Doc1U>)
+- Para subir imágenes, puede usar cloudinary para subir imágenes y videos, cree una cuenta y copie la variable de entorno que le da cloudinary, cópiela y péguela en CLOUDINARY_URL
 
