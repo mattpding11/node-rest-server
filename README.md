@@ -52,5 +52,5 @@ CLOUDINARY_URL=
 -	Luego abra su db compass y cree una nueva conexión, donde dice uri, pege su cadena de mongo_cnn del .env y presione conectar 
 -	Si se conectó correctamente ya debería funcionar la aplicación, antes de probar los endpoint recuerde crear usuarios primero ya que los que aparecen en la documentación son los que yo use para las pruebas en mi equipo (tome de ejemplo la documentación de postman aquí
 <https://documenter.getpostman.com/view/10033004/Uz5Doc1U>)
-- Para subir imágenes, puede usar cloudinary para subir imágenes y videos, cree una cuenta y copie la variable de entorno que le da cloudinary, cópiela y péguela en CLOUDINARY_URL
+- Para subir imágenes, puede usar cloudinary para subir imágenes y videos, cree una cuenta y copie la variable de entorno que le da [cloudinary](https://cloudinary.com/), cópiela y péguela en CLOUDINARY_URL
 
