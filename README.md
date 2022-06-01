@@ -54,12 +54,11 @@ CLOUDINARY_URL=
 <https://documenter.getpostman.com/view/10033004/Uz5Doc1U>)
 - Para subir imágenes, puede usar cloudinary para subir imágenes y videos, cree una cuenta y copie la variable de entorno que le da [cloudinary](https://cloudinary.com/), cópiela y péguela en CLOUDINARY_URL
   
+ ---
   
  ### Contact me
  
 🌐 Portafolio web: https://mattpding11.github.io/mateo 
-  
-🌐 GitHub: https://github.com/mattpding11
   
 🌐 LinkedIn: https://github.com/mattpding11
   
