@@ -5,6 +5,9 @@ const Usuario = require('../models/usuario');
 const { generarJWT } = require('../helpers/generar-jwt');
 const { googleVerify } = require('../helpers/google-verify');
 
+// colocar esto: req = request, res = response, es solo para que nos ayude con el tipado
+// osea que nos aparezcan las propiedades de las variables
+
 const login = async(req = request, res = response) => {
 
     const {correo, password} = req.body;
@@ -70,7 +73,7 @@ const googleSignin = async(req, res = response) => {
             const data = {
                 nombre,
                 correo,
-                password: ':P',
+                password: '123',
                 img,
                 google: true
             };
@@ -91,21 +94,18 @@ const googleSignin = async(req, res = response) => {
 
         const token = await generarJWT(usuario.id);
 
-
         res.json({
             usuario,
             token
         })
+
     }catch(err){
         res.status(400).json({
             msg: 'Token de google no es valido'
         });
     }
-
-
   
 }
-
 
 module.exports = {
     login,

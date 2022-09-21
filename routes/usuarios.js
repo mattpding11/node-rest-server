@@ -43,6 +43,21 @@ router.patch('/:id?', usuariosPatch);
 
 router.get('/test', Test);
 
+// Ejemplo apires
+/*router.get('/apirest', (req,res) => {
+
+    fetch('https://reqres.in/api/users?page=2')
+    .then(res => res.json())
+    .then(console.log)
+    .catch(err => console.log(err));
+
+    res.json({
+        test: "Prueba exitosa"
+    })
+
+})
+*/
+
 router.delete('/:id',[
     validarJWT,
     // esAdminRole,
@@ -51,6 +66,7 @@ router.delete('/:id',[
     check('id').custom(existeUsuarioId),
     validarCampos
 ], usuariosDelete);
+
 
 
 module.exports = router;

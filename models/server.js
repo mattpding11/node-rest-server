@@ -4,14 +4,17 @@ const { dbConnection } = require('../database/config');
 const fileUpload = require('express-fileupload')
 
 // inicializar el repo con todo yes por default: npm init - y
+// Van primero las exportaciones de terceros, luego las de nuestro poyecto
 // npm install dotenv express
 // recuperar archivos: git chekout -- .
+// Reinicair la aplicacion cada vez que se hagan cambios
 
 class Server {
 
     constructor() {
         this.app = express()
         this.port = process.env.PORT || 3000;
+        // Se definen las rutas de la aplicacion, siempre empiezan por un /
         this.path =
         {
             auth: '/api/auth',
@@ -28,7 +31,8 @@ class Server {
         // Middlewares
         this.middlewares();
 
-        // Rutas de mi aplicacion
+        // Rutas de mi aplicacion 
+        //(las rutas son lo ultimo que se debe llamar, primero se configura toda la aplicacion)
         this.routes();
 
     }
@@ -42,10 +46,10 @@ class Server {
         // CORS
         this.app.use(cors());
 
-        // lectura y parseo del body
+        // lectura y parseo del body (no se usa this.express porque esta fuera de la clase)
         this.app.use(express.json())
 
-        // Directorio publico
+        // Directorio publico estatico para abrir index.html
         this.app.use(express.static('public'));
 
         // Carga de archivos

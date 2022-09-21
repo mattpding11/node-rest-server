@@ -1,0 +1,23 @@
+runtime: nodejs16 # or another supported version
+
+instance_class: F2
+
+env_variables:
+  BUCKET_NAME: "mattpding-node"
+  PORT: "8080"
+  MONGODB_CNN: "mongodb+srv://mpd11:ZVXBCDws54aJ8krx@miclustercafe.1dnc6.mongodb.net/cafeDB"
+  USER: "mpd11"
+  PASS: "ZVXBCDws54aJ8krx"
+  SECRETORPRIVATEKEY: "Est03sMyPublicKey"
+  GOOGLE_CLIENT_ID: "27449341552-qdpl5f1e355ml3jklb86rtms2etju7b6.apps.googleusercontent.com"
+  GOOGLE_SECRET: "C61xOvBctQ98b6uUO6VAilai"
+  CLOUDINARY_URL: "cloudinary://269819288669655:IwwVIpkk3oPq8yTJgNqu6QdQaMA@drbotbbjb"
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
