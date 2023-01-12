@@ -56,7 +56,7 @@ CLOUDINARY_URL=
   
  ---
   
- ### Contact me
+### Contact
  
 🌐 Portafolio web: https://mattpding11.github.io/mateo 
   
