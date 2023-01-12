@@ -1,6 +1,6 @@
 # Aplicación Rest con NodeJS y conexión a base da datos con Mongo DB
 
-Puede probar la api rest haciendo las peticiones desde postman a este back https://node-rest-server.up.railway.app, puede hacerlo desde su equipo siguiendo estos ejemplos en la **documentación** _**<https://documenter.getpostman.com/view/10033004/Uz5CMHyt> **_. Este consume los endpoints aplicación que esta desplegada en un servidor web.
+Puede probar la api rest haciendo las peticiones desde postman a este back https://node-rest-server.up.railway.app, puede hacerlo desde su equipo siguiendo estos ejemplos en la **documentación** _**<https://documenter.getpostman.com/view/10033004/Uz5CMHyt>**. Este consume los endpoints aplicación que esta desplegada en un servidor web.
 
 En la documentación cambie el lenguaje de **cURL a HTTP** para mejor comprensión 
 
